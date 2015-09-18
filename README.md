@@ -1,5 +1,5 @@
 #Overview
-This project creates a Docker container that houses the [MongoDB Service](https://github.com/kurron/monitor-mongodb). 
+This project creates a Docker container that houses the [MySQL Service](https://github.com/kurron/monitor-mysql). 
 It provides a convenient distribution mechanism for the application and is intended to used in concert with the other 
 Docker containers that comprise the application monitoring simulation.
 
@@ -9,12 +9,12 @@ Docker containers that comprise the application monitoring simulation.
 * [Docker](https://www.docker.com/) installed and working
 
 #Building
-Execute `./build.sh` create the Docker image. It will reach out to [Bintray](https://bintray.com/kurron/maven/monitor-mongodb/view) 
+Execute `./build.sh` create the Docker image. It will reach out to [Bintray](https://bintray.com/kurron/maven/monitor-mysql/view) 
 and install the application into the Docker image.
 
 #Installation
 Execute `./start.sh` to install and run the Docker image.  The image will run in the background and the service, by default, will 
-be listening on port 8100. The script is configured to automatically tail the logs as the container starts up.  Hit `ctrl-c` to 
+be listening on port 8300. The script is configured to automatically tail the logs as the container starts up.  Hit `ctrl-c` to 
 stop watching the logs.   When you wish to uninstall the container, execute `./stop.sh` and the container will be stopped and removed.
 **NOTE:** Docker does a great job of restricting the visibility of the processes running inside it which means that `start.sh` script 
 will likely have to be changed to match your environment.

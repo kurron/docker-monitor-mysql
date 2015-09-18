@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker inspect redis-service 
+docker inspect mysql-service 

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker stop redis-service 
-docker rm redis-service 
+docker stop mysql-service 
+docker rm mysql-service 
