@@ -7,5 +7,4 @@ ADD https://bintray.com/artifact/download/kurron/maven/org/kurron/example/monito
 
 EXPOSE 8300
 
-ENTRYPOINT ["java", "-jar", "/opt/example/application.jar"]
-
+ENTRYPOINT ["java", "-server", "-Xmx256m", "-Dsun.net.inetaddr.ttl=60", "-jar", "/opt/example/application.jar"]
